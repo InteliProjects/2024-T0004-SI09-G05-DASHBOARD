@@ -1,0 +1,72 @@
+h3 {
+    font-size: 24px; /* Tamanho um pouco menor para o menu */
+    color: #022C5F; 
+    font-weight: 600; /* Deixando um pouco mais destacado */
+    line-height: 1.3; /* Aumenta o espaçamento entre linhas */
+    letter-spacing: 0; /* Espaçamento normal entre as letras */
+    margin: 0 0 15px 0; /* Margin-bottom para espaçamento */
+    font-family: "Roboto", sans-serif; /* Uma fonte mais simples */
+    margin-top: -40px; /* Ajuste o valor de acordo com a sua necessidade */
+  }
+  .main-menu:hover {
+    cursor: pointer; /* Altere o estilo do cursor conforme necessário */
+  }
+  .nav-item.active a {
+    color: var(--bright-blue);
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.08);
+   }
+   
+  .menu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    padding-bottom: 20px; /* Adiciona espaçamento na parte inferior */
+    border-bottom: 1px solid rgba(0,0,0, 0.1); /* Borda discreta  */
+  }
+  
+  .logo-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .menu-items {
+    padding-left: 20px;
+  }
+  
+  .menu-items ul {
+    list-style-type: none;
+    padding: 0; /* Remove o padding padrão */
+  }
+  
+  .menu-items ul li {
+    font-size: 18px; 
+    font-family: "Roboto", sans-serif; 
+    margin-bottom: 15px; 
+    padding: 10px 0; /* Aumente o valor para aumentar o espaçamento vertical */
+  }
+  
+  .menu-items ul li a {
+    color: #ACABB0; 
+    text-decoration: none;
+    display: block; /* Ocupa toda largura */
+    padding: 8px 0; /* Espaçamento vertical no link */
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .menu-items ul li a:hover {
+    color: var(--bright-blue); 
+    background-color: rgba(0,0,0,0.05); /* Efeito de hover sutil */
+  }
+  
+  .menu-items ul li.active a {
+    color: var(--bright-blue);
+    font-weight: bold; 
+    background-color: rgba(0,0,0, 0.08);
+  }
+  
+  .main-menu {
+    overflow-x: hidden;
+    padding: 20px; 
+  }

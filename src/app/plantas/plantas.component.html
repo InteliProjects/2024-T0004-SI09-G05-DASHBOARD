@@ -1,0 +1,92 @@
+<div class="geral">
+  <section class="content">
+    <div class="left-content">
+      <div class="activities">
+        <h1>Plantas
+           <span class="details-text">
+            Detalhes
+          </span>
+        </h1>
+        <span class="more-info-text">Escolha para mais informações</span>
+        <div class="fabricas-container">
+          <div class="fabrica">
+            <img class="imagem_fabrica" src="./assets/fabrica_icone.png" alt="Ícone da fábrica" width="64" height="64">
+            <p>
+              São Bernardo
+            </p>
+          </div>
+          <div class="fabrica">
+            <img class="imagem_fabrica" src="./assets/fabrica_icone.png" alt="Ícone da fábrica" width="64" height="64">
+            <p>
+              São Carlos
+            </p>
+          </div>
+          <div class="fabrica">
+            <img class="imagem_fabrica" src="./assets/fabrica_icone.png" alt="Ícone da fábrica" width="64" height="64">
+            <p>
+              Taubaté
+            </p>
+          </div>
+          <div class="fabrica">
+            <img class="imagem_fabrica" src="./assets/fabrica_icone.png" alt="Ícone da fábrica" width="64" height="64">
+            <p>
+              São José dos Pinhares
+            </p>
+          </div>
+        </div>
+        <h2>Dados 2023</h2>
+        <div class="activity-container">
+          <div class="image-container img-one">
+            <div class="activity-container chart-background">
+              <div class="image-container img-one">
+            <apx-chart
+              [series]="chartOptions.series!"
+              [chart]="chartOptions.chart!"
+              [xaxis]="chartOptions.xaxis!"
+              [dataLabels]="chartOptions.dataLabels!"
+              [grid]="chartOptions.grid!"
+              [stroke]="chartOptions.stroke!"
+              [title]="chartOptions.title!"
+            ></apx-chart>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3 class="atividade">Planta com maior nota GPTW
+      <!-- <div class="nota">
+        <img class="imagem_nota" src="./assets/Ellipse 17.png" alt="Ícone nota" width="64" height="64">
+        <img class="imagem_nota3" src="./assets/Ellipse 18.png" alt="Ícone nota" width="64" height="64">
+        <img class="imagem_notageral" src="./assets/90.png" alt="Ícone nota" width="24" height="24">
+      </div> -->
+      <!-- <h4>Valor de Destaque:</h4> -->
+      <!-- <span [style.color]="'green'">{{ valorDestaque }}</span> -->
+      <apx-chart
+        [series] = "chartOptions2.series!"
+        [chart] = "chartOptions2.chart!"
+        [labels] = "chartOptions2.labels!"
+        [colors] = "chartOptions2.colors!"
+      ></apx-chart>
+    <!-- <span class="details">
+      Taubaté
+    </span> -->
+    </h3>
+    <h3 class="atividade2">Planta com menor nota GPTW
+      <div class="nota2">
+        <!-- <img class="imagem_nota2" src="./assets/Ellipse 18.png" alt="Ícone nota" width="64" height="64"> -->
+        <apx-chart
+        [series] = "chartOptions3.series!"
+        [chart] = "chartOptions3.chart!"
+        [labels] = "chartOptions3.labels!"
+        [colors] = "chartOptions3.colors!"
+      ></apx-chart>
+      </div>
+      <span class="details2">
+        São José dos Pinhais
+      </span>
+    </h3>
+    <img class="icone_perfil" src="./assets/Ellipse 1.png" alt="Ícone nota" width="50" height="50">
+  </section>
+</div>
+

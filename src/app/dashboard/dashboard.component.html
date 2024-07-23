@@ -1,0 +1,79 @@
+<div class="geral">
+    <section class="content">
+      <div class="left-content">
+        <div class="activities">
+          <h1>Visão Geral
+          </h1>
+          <h2>Dados 2023</h2>
+          <h3 class="nota-empresa">GPTW 
+            <span class="textnota">78</span>
+          </h3>
+      <h3 class="col">Colaboradores
+        <apx-chart
+              [series]="chartOptions.series!"
+              [chart]="chartOptions.chart!"
+              [xaxis]="chartOptions.xaxis!"
+              [dataLabels]="chartOptions.dataLabels!"
+              [grid]="chartOptions.grid!"
+              [stroke]="chartOptions.stroke!"
+              [title]="chartOptions.title!"
+            ></apx-chart>
+      </h3>
+      <h3 class="plantas">Doença com maior número de atestados
+        <span class="text-nota">
+          <span class="textnota">Ansiedade: {{cidDoencaData}}</span> 
+
+          </span>
+      </h3>
+      <h3 class="diretoria">Business Partner
+        <span class="text-diretoria">
+            Bem estar emocional
+            <apx-chart
+            #chart
+            [series]="lineChartOptions.series!"
+            [chart]="lineChartOptions.chart!"
+            [xaxis]="lineChartOptions.xaxis!"
+            [dataLabels]="lineChartOptions.dataLabels!"
+            [grid]="lineChartOptions.grid!"
+            [stroke]="lineChartOptions.stroke!"
+            [title]="lineChartOptions.title!"
+          ></apx-chart>
+          </span>
+      </h3>
+      <h3 class="bp">Diretoria
+        <span class="text-bp">
+            Bem estar emocional
+            <apx-chart
+            #barChart
+            [series]="barChartOptions.series!"
+            [chart]="barChartOptions.chart!"
+            [xaxis]="barChartOptions.xaxis!"
+            [yaxis]="barChartOptions.yaxis!"
+            [dataLabels]="barChartOptions.dataLabels!"
+            [grid]="barChartOptions.grid!"
+            [stroke]="barChartOptions.stroke!"
+            [title]="barChartOptions.title!"
+          ></apx-chart>
+          </span>
+      </h3>
+      <h3 class="stiba_media">Doença mais associada por Causa Raiz
+        <span class="grafico_stiba">
+          <apx-chart
+          [series]="secondBarChartOptions.series!"
+          [chart]="secondBarChartOptions.chart!"
+          [xaxis]="secondBarChartOptions.xaxis!"
+          [dataLabels]="secondBarChartOptions.dataLabels!"
+          [grid]="secondBarChartOptions.grid!"
+          [stroke]="secondBarChartOptions.stroke!"
+          [title]="secondBarChartOptions.title!"
+          [tooltip]="secondBarChartOptions.tooltip!"
+        ></apx-chart>
+        </span>
+      </h3>
+          </div>
+          <img class="icone_perfil" src="./assets/Ellipse 1.png" alt="Ícone nota" width="50" height="50">
+        </div>
+    
+    </section>
+  </div>
+  

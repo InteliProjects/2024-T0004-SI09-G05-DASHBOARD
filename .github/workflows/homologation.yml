@@ -1,0 +1,65 @@
+name: teste.Dashboard.WebApi
+
+on:
+  push:
+    branches:
+      - homologation
+  pull_request:
+    branches:
+      - homologation
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: "Checkout"
+      uses: actions/checkout@v2
+
+    - name: "Set Node.js"
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.18.0'
+
+    - name: "Install Angular CLI"
+      run: npm install -g @angular/cli@latest
+
+    - name: "Install dependencies"
+      run: npm install
+
+    - name: "Build"
+      run: ng build --configuration=production
+
+  # test:
+  #   name: "Unit Test"
+  #   needs: build
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #   - name: "Checkout"
+  #     uses: actions/checkout@v2
+
+  #   - name: "Set Node.js"
+  #     uses: actions/setup-node@v3
+  #     with:
+  #       node-version: '18.18.0'
+
+  #   - name: "Install Angular CLI"
+  #     run: npm install -g @angular/cli@latest
+
+  #   - name: "Install dependencies"
+  #     run: npm install
+
+  #   - name: "Run unit tests"
+  #     run: ng test --watch=false --browsers=ChromeHeadless
+
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_API_KEY }}

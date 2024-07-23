@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-info {
+    flex: 1;
+    background-color: #ffffff; /* White background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+  }
+  
+  .login-form {
+    flex: 1;
+    background-color: #ebebeb; /* Grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo img {
+    width: 200px;
+    margin-bottom: 200px;
+    margin-top: -100px;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #022C5F;
+    margin-bottom: 6px;
+    margin-top: -220px;
+  }
+  
+  .slogan {
+    font-size: 18px;
+    color: #0C73B8;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 450px; /* Adjusted width */
+    padding: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .login-btn {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 250px; /* Match the input fields width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .login-btn:hover {
+    background: #2980b9;
+  }
+  

@@ -1,0 +1,323 @@
+.content {
+    display: grid;
+  }
+  
+  /* LEFT CONTENT */
+  .left-content {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background: #F6F7FB;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  /* ACTIVITIES */
+  .activities h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #022C5F;
+  }
+  
+  .details-text {
+    color: #022C5F;
+    margin-left: 600px;
+  }
+  
+  .fabricas-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF; /* Esta é a cor de fundo que foi adicionada */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno ao redor do conteúdo */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: Adiciona uma sombra para um efeito de profundidade */
+    margin-right: 20px; /* Ajusta o espaçamento à direita, se necessário */
+    margin-top: 10px; /* Ajusta o espaçamento no topo, se necessário */
+    margin-left: 600px;
+    width: 250px;
+    height: 450px;
+  }
+  
+  
+  .fabrica {
+    display: flex;
+    flex-direction: column;
+    margin-left: -620px;
+  }
+  
+  .fabrica p {
+    position: relative;
+    left: 105px;
+    text-align: center;
+    margin-top: 2px;
+    margin-left: 405px;
+  }
+  
+  
+  .imagem_fabrica {
+    margin-left: 700px;
+    margin-top: 10px;
+  }
+  
+  .activities h2 {
+    margin: 0 0 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .chart-background {
+    background-color: #ffffff; /* Esta é a cor de fundo que será aplicada */
+    padding: 20px; /* Espaçamento interno ao redor do gráfico */
+    border-radius: 15px; /* Bordas arredondadas do fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil para dar profundidade */
+    margin-bottom: 20px; /* Espaço extra abaixo do gráfico, se necessário */
+    margin-top: -15px; /* Ajusta o espaçamento no topo, se necessário */
+    width: 550px;
+    height: 400px;
+  }
+  
+  .activity-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    column-gap: 10px;
+  }
+  
+  .img-one {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .img-two {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  .img-three {
+    display: block;
+    grid-area: 1 / 2 / 3 / 4;
+  }
+  
+  .img-four {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  
+  .img-five {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  
+  .image-container {
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: none;
+  }
+  
+  body {
+    background-color: #ffffff;
+  }
+  
+  .apexcharts-canvas {
+    background-color: #fff;
+  }
+  
+  .img-six img { /* Adiciona um seletor mais específico para a imagem */
+    height: 530px;  /* Altera a altura da imagem (ajuste o valor conforme desejado) */
+    margin-left: 260px; /* Move a imagem para a direita (ajuste o valor) */
+    margin-top: -50px; /* Move a imagem para baixo (ajuste o valor) */
+  }
+  
+  /* Classes para as novas imagens */
+  .img-seven img {
+    height: 140px;     /* Altura da imagem GPTW_img */
+    margin-left: -950px; /* Margem à esquerda para posicionamento */
+    margin-bottom: -470px; /* Move a imagem para baixo (ajuste o valor) */
+  
+  }
+  
+  .img-eight img {
+    height: 140px;     /* Altura da imagem GPTW2_img */
+    margin-right: 20px; /* Margem à esquerda para posicionamento */
+    margin-left: -700px; /* Margem à esquerda para posicionamento */
+    margin-bottom: -470px; /* Move a imagem para baixo (ajuste o valor) */
+  }
+  
+  .col{
+    margin-top: 70px;
+    margin-left: 50px;
+    color: #022C5F;
+  }
+  
+  .plantas {
+    margin-top: -45px;
+    margin-left: 350px;
+    color: #022C5F;
+  }
+  
+  .col {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    width: 430px;
+    height: 250px;
+    margin-left: 35px;
+  }
+
+.nota-empresa {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 20px; 
+    margin-top: 25px; 
+    width: 340px;
+    height: 150px;
+    margin-left: 35px;
+}
+  
+  .plantas {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    width: 340px;
+    height: 250px;
+    margin-left: 35px;
+  }
+
+  .stiba_media {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 20px; 
+    margin-top: 10px; 
+    width: 620px;
+    height: 450px;
+    margin-left: 500px;
+  }
+
+  .grafico_stiba {
+    font-size: 0.8rem;
+    color: #000000;
+    position: relative;
+    top: 25px;
+    margin-left: -40px;
+  }
+  
+  .text-nota {
+    font-size: 0.8rem;
+    color: #000000;
+    position: relative;
+    top: 25px;
+    margin-left: -59px;
+  }
+
+  .textnota {
+    font-size: 30px;
+    color: #0d8e0f;
+    position: relative;
+    top: 45px;
+    margin-left: 70px;
+  }
+  
+  .details2 {
+    font-size: 0.8rem;
+    color: #313131;
+    position: relative;
+    top: 100px; 
+    margin-left: 45px;
+  }
+  
+  .imagem_nota {
+    margin-left: 70px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .imagem_nota3 {
+    margin-left: 70px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .imagem_notageral {
+    margin-left: 90px;
+    margin-top: 50px;
+  }
+  
+  .imagem_nota2 {
+    margin-left: 70px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .icone_perfil {
+    margin-left: 960px;
+    margin-top: -740px;
+  }
+
+.nota-empresa {
+    color: #022C5F;
+}
+
+.diretoria{
+    margin-top: -510px;
+    margin-left: 650px;
+    color: #022C5F;
+  }
+.text-diretoria {
+    font-size: 0.8rem;
+    color: #000000;
+    position: relative;
+    top: 25px;
+    margin-left: -127px;
+}
+.diretoria {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 20px; 
+    margin-top: -600px; 
+    width: 620px;
+    height: 400px;
+    margin-left: 500px;
+}
+
+.bp{
+    margin-top: -510px;
+    margin-left: 650px;
+    color: #022C5F;
+  }
+
+.text-bp {
+    font-size: 0.8rem;
+    color: #000000;
+    position: relative;
+    top: 25px;
+    margin-left: -66px;
+}
+.bp {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    width: 620px;
+    height: 400px;
+    margin-left: 500px;
+}
+.icone_perfil {
+    margin-left: 1020px;
+    margin-top: -680px;
+}

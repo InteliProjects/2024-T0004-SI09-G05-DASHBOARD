@@ -1,0 +1,36 @@
+<div class="geral">
+  <section class="content">
+    <div class="left-content">
+      <div class="activities">
+        <h1>Engajamento</h1>
+        <h2>Dados 2023</h2>
+        <h3 class="nota-empresa">Satisfação GPTW <span class="notaatribuida">78</span></h3>
+        <h3 class="satisfacao_stiba">Satisfação STIBA: <span class="satisfaction-value">{{ stibaSatisfaction }}</span></h3>
+        <h3 class="gptw">Engajamento GPTW: <span class="engajagptw">{{ gptwEngagement }}%</span></h3>
+        <h3 class="stiba">Engajamento STIBA: <span class="engajastiba">{{ stibaEngagement }}% </span></h3>
+      </div>
+      <img class="icone_perfil" src="./assets/Ellipse 1.png" alt="Ícone nota" width="50" height="50">
+    </div>
+    <div class="activity-container">
+      <div class="image-container img-one">
+        <div class="activity-container chart-background">
+          <div class="image-container img-one">
+            <div id="chart">
+              <apx-chart
+              #chart
+              [series]="chartOptions.series!"
+              [chart]="chartOptions.chart!"
+              [xaxis]="chartOptions.xaxis!"
+              [dataLabels]="chartOptions.dataLabels!"
+              [grid]="chartOptions.grid!"
+              [stroke]="chartOptions.stroke!"
+              [title]="chartOptions.title!"
+            ></apx-chart>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
